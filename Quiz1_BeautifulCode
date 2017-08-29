@@ -1,0 +1,31 @@
+/*
+Caleb Briggs
+August 29 2017
+The purpose of the sketch is to describe beautiful code, by creating elegant, effective code
+*/
+/*
+Sketch Overview: 
+  --Creates a group of colors, that describe the varying colors Red
+*/
+int x; //init x, y, and Red
+int y;
+float Red;
+
+void setup() {
+  size(200,200); //init size 200x by 200y
+  
+}
+void draw() {
+  fill(Red,0,0); //makes rectangle certain amount Red
+  rect(x,y,10,10); //draw rect
+  Red = Red + (255.0/400); //size of total is 20 * 20, so change red by 255/400
+  x = x + 10;
+  if (x == 200) { //.if reached right, move down
+    x = 0; //reset to left side
+    y = y + 10; //move down 10
+  }
+  if (y > 200) { 
+    noLoop(); //if past end, stop
+  }
+  
+}

@@ -16,6 +16,8 @@ void setup() {
   
 }
 void draw() {
+  noStroke(); //remove lines from squares
+  frameRate(1150); //increase speed
   fill(Red,0,0); //makes rectangle certain amount Red
   rect(x,y,10,10); //draw rect
   Red = Red + (255.0/400); //size of total is 20 * 20, so change red by 255/400
@@ -29,3 +31,4 @@ void draw() {
   }
   
 }
+
